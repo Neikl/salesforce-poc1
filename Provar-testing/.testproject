@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testProject selectedBrowserProviderDeviceName="1366x768" selectedBrowserProviderName="Desktop" selectedEnvironment="Test Env">
+  <title>/Sales/.testproject</title>
+  <configPath>config</configPath>
+  <testsPath>tests</testsPath>
+  <testPlansPath>plans</testPlansPath>
+  <templatesPath>templates</templatesPath>
+  <sourcePath>src</sourcePath>
+  <secureStoragePath>.secrets</secureStoragePath>
+  <browserDebugPort>0</browserDebugPort>
+  <environments>
+    <environment name="Test Env">
+      <summary/>
+    </environment>
+  </environments>
+  <connectionClasses>
+    <connectionClass name="sf">
+      <connections>
+        <connection name="Test1">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="b86655d5-62a6-4a47-9e62-87364dbb6514" url="sf:user=saiindira@force.com;password={password};securityToken={securityToken};environment=PROD_DEV"/>
+            <connectionUrl envName="Test Env" secureStorageNodeId="bf7645d0-68de-453c-ae30-a30705a0088b" url="sf:user=saiindira@force.com;password={password};securityToken={securityToken};environment=PROD_DEV;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="7f4dbf3f-db61-4e49-b243-0e5ace3e7c01" name="Devops">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="f2bbf33b-0513-42ed-a9ed-dc54a754c300" url="sf:user=test-eqnzrbhrzdga@example.com;password={password};securityToken={securityToken};environment=SANDBOX;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+        <connection id="fe65efdd-7498-46e6-849c-49d8da31a468" name="Devops2">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="a462502d-5cb6-4bcf-9ee5-db5049376a8d" url="sf:user=test-ob1k4yqwk52p@example.com;password={password};securityToken={securityToken};environment=SANDBOX;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="webservice">
+      <connections>
+        <connection id="1622f207-86f8-4e05-bbe5-bca95f353ba3" name="Rest">
+          <summary>No auth</summary>
+          <connectionUrls>
+            <connectionUrl url="restservice:url=http://www.7timer.info/bin/api.pl?lon=113.17&amp;lat=23.09&amp;product=astro&amp;output=json;authenticationType=NO_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="bd32732f-046e-434c-a29c-0f2b546a31ed" name="APIactivity">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="restservice:url=https://www.boredapi.com/api/activity;authenticationType=NO_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="665987b4-fa72-4179-9b29-4b8f3276a1c9" name="Weather">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="49b97753-0611-4dbc-a439-e69177ab637c" url="restservice:url=https://openweathermap.org/api;apiKey={apiKey};authenticationType=API_KEY">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="2ed3a36e-3db2-4e6c-8e85-0bdccc8eba4c" name="PostrestAPI">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="restservice:url=https://gorest.co.in/;authenticationType=NO_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="bbd8c7db-3bfc-48a0-894b-8f69a4e9f489" name="SalesforceCOnnction">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="17b54ffb-150c-4016-bcaf-85e7d57fba70" url="restservice:url=https://ap16.lightning.force.com;clientId=3MVG9n_HvETGhr3A8PmSfC7bYMQ8UrSwvkFKCzwozIyO6LpxeFTya1C9MBBxksmti.xnMtgyZYUxNhKquOoJB;clientSecret={clientSecret};authenticationType=OAUTH_CLIENT_CREDENTIALS">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="d476365f-e4bd-4fbe-91ea-44e37d1ea1b2" name="sales">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="59535e76-bc12-4a45-899e-b479f3ab4aa7" url="restservice:url=https://ap16.lightning.force.com;clientId=3MVG9n_HvETGhr3A8PmSfC7bYMeN.OUNW49TOTF75QkWQmZPJ.tD92SGoT8G4p58sX5KtzjPB9IjUNQs_aUs.;clientSecret={clientSecret};authenticationType=OAUTH_CLIENT_CREDENTIALS">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="ea45d48c-c0bd-4244-8099-1a0272d26e4f" name="RESTAPI">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="restservice:url=http://httpbin.org/;authenticationType=NO_AUTHENTICATION">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+        <connection id="b61b0de5-bd88-40ed-9a79-f6629c212928" name="Digi">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="2364d005-d831-4c72-9503-7713b8272bd7" url="restservice:url=https://ap16.lightning.force.com;clientId=3MVG9n_HvETGhr3A8PmSfC7bYMd1R6eGtYBjTmyZ.ghzZjKJEGq9dtejv6prKej9.rl1zYKQJHqrkGJ099Orz;clientSecret={clientSecret};authenticationType=OAUTH_CLIENT_CREDENTIALS">
+              <customHeaders/>
+            </connectionUrl>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+  </connectionClasses>
+  <browserConfigurations>
+    <browserConfiguration adjustBrowserWidthForChromeIde="true" browserHeight="0" browserWidth="0" name="Full Screen">
+      <summary>Full screen with Test Builder adjustment</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1024" browserWidthType="Pixels" name="1024x768">
+      <summary>Fixed 1024x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="800" browserHeightType="Pixels" browserWidth="1280" browserWidthType="Pixels" name="1280x800">
+      <summary>Fixed 1280x800</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1366" browserWidthType="Pixels" name="1366x768">
+      <summary>Fixed 1366x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="1080" browserHeightType="Pixels" browserWidth="1920" browserWidthType="Pixels" name="1920x1080">
+      <summary>Fixed 1920x1080</summary>
+    </browserConfiguration>
+  </browserConfigurations>
+  <browserApplications>
+    <browserApplication connectionTypes="sf" name="Salesforce1">
+      <properties>
+        <browserPlatformProperty name="browserName" platform="IOS" type="DesiredCapability" value="Safari"/>
+        <browserPlatformProperty name="browserName" platform="ANDROID" type="DesiredCapability" value="Chrome"/>
+      </properties>
+    </browserApplication>
+    <browserApplication connectionTypes="sf" name="ServiceMax FSA">
+      <properties>
+        <browserPlatformProperty name="bundleId" platform="IOS" type="DesiredCapability" value="com.servicemaxinc.svmxfieldserviceapp"/>
+        <browserPlatformProperty name="app" platform="DESKTOP" type="DesiredCapability" value="C:\\Program Files\\ServiceMax\\ServiceMax Field Service\\Laptop Mobile.exe"/>
+      </properties>
+    </browserApplication>
+  </browserApplications>
+  <browserProviders>
+    <browserProvider name="Desktop" type="SeleniumLocal">
+      <devices>
+        <browserProviderDevice name="Full Screen">
+          <properties>
+            <browserPlatformProperty name="summary" value="Full screen with Test Builder adjustment"/>
+            <browserPlatformProperty name="browserHeightType" value="Full"/>
+            <browserPlatformProperty name="browserWidthType" value="Full"/>
+            <browserPlatformProperty name="adjustBrowserWidthForChromeIde" value="true"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1024x768">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1024x768"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="768"/>
+            <browserPlatformProperty name="browserWidth" value="1024"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1280x800">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1280x800"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="800"/>
+            <browserPlatformProperty name="browserWidth" value="1280"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1366x768">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1366x768"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="768"/>
+            <browserPlatformProperty name="browserWidth" value="1366"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1920x1080">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1920x1080"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="1080"/>
+            <browserPlatformProperty name="browserWidth" value="1920"/>
+          </properties>
+        </browserProviderDevice>
+      </devices>
+    </browserProvider>
+    <browserProvider name="ABC" type="SeleniumGrid">
+      <devices>
+        <browserProviderDevice name="ANY Chrome" platform="ANY">
+          <properties>
+            <browserPlatformProperty name="browserName" type="DesiredCapability" value="Chrome"/>
+            <browserPlatformProperty name="version" type="DesiredCapability" value=""/>
+          </properties>
+        </browserProviderDevice>
+      </devices>
+      <properties>
+        <browserPlatformProperty name="gridUrl" value="http://localhost:4444/wd/hub"/>
+      </properties>
+    </browserProvider>
+  </browserProviders>
+</testProject>

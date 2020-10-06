@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase id="10">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.restservice.WebConnect" name="WebConnect" testItemId="1" title="Web Connect: SalesforceCOnnction">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">SalesforceCOnnction</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">SalesforceCOnnction</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.restservice.RestRequest" name="RestRequest" testItemId="2" title="Web Request (REST): ⇒RestResponse">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">SalesforceCOnnction</value>
+        </argument>
+        <argument id="targetValue">
+          <value class="restTarget" uri="rest:untyped?method=GET&amp;bodyStyle=JSON"/>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">RestResponse</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="statusResultName">
+          <value class="value" valueClass="string">RestResponseStatus</value>
+        </argument>
+        <argument id="restResourceUrl">
+          <value class="value" valueClass="string">https://ap16.lightning.force.com/services/data/44.0/sobjects/Account/0012w00000NnIPG?fields=Name,Phone,Website</value>
+        </argument>
+        <argument id="restRequestHeader">
+          <value class="invalid">Authorization:Bearer {{00D2w000007PEuf!AQgAQC3wpDdY4VYAjsIdpUju2cw5IPI_K1ZKp2fYm_6GlljHKNghmgPp7RNp8nj_Z0Lqo9BNwHL3WCw5NeqPbg73GsBRL.bl\n\n}}\nContent-Type: application/json</value>
+        </argument>
+      </arguments>
+      <generatedParameters>
+        <apiParam group="request" internal="true" name="restResourceUrl" title="Resource URL">
+          <type>
+            <textType/>
+          </type>
+        </apiParam>
+        <apiParam group="header" internal="true" name="restRequestHeader" title="Request Header">
+          <type>
+            <textType/>
+          </type>
+        </apiParam>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+</testCase>

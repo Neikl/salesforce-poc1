@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testProject selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop">
+  <title>/Digi/.testproject</title>
+  <configPath>config</configPath>
+  <testsPath>tests</testsPath>
+  <testPlansPath>plans</testPlansPath>
+  <templatesPath>templates</templatesPath>
+  <sourcePath>src</sourcePath>
+  <secureStoragePath>.secrets</secureStoragePath>
+  <browserDebugPort>0</browserDebugPort>
+  <connectionClasses>
+    <connectionClass name="sf">
+      <connections>
+        <connection name="Test2">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="08a13ac2-8aba-4c3c-af26-82f9f52d5e5e" url="sf:user=saiindira@force.com;password={password};securityToken={securityToken};environment=PROD_DEV;lightningMode=true"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+    <connectionClass name="ui">
+      <connections>
+        <connection name="WebtoCase">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="9c6c8e22-da40-4f13-97e8-fee690454899" url="se:baseUrl=http://www.provartesting.com/quickstart/webtocase/"/>
+          </connectionUrls>
+        </connection>
+        <connection id="bff7741a-ed71-4b7f-a7ee-b339c6093c94" name="Dummy">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl url="se:baseUrl=http://book.theautomatedtester.co.uk/"/>
+          </connectionUrls>
+        </connection>
+        <connection name="Dummywebsite">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="895b8392-033d-4479-b345-477de5f21b7d" url="se:baseUrl=http://book.theautomatedtester.co.uk/"/>
+          </connectionUrls>
+        </connection>
+        <connection name="Samle">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="c9db0ecb-2ad9-474c-b961-734abf908093" url="se:baseUrl=http://book.theautomatedtester.co.uk/"/>
+          </connectionUrls>
+        </connection>
+        <connection name="Spicejet">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="65a3df52-07ff-42e4-8064-caa23e165a43" url="se:baseUrl=https://www.spicejet.com/"/>
+          </connectionUrls>
+        </connection>
+        <connection name="Spi">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="9a183718-7ea7-4eba-8cfb-1dbc8cf40ef7" url="se:baseUrl=https://www.spicejet.com/"/>
+          </connectionUrls>
+        </connection>
+        <connection name="SpieJet">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="d70c447d-2995-4945-949c-6cfcee6cb1fa" url="se:baseUrl=https://www.spicejet.com/"/>
+          </connectionUrls>
+        </connection>
+        <connection name="Trsp">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="419ff39a-0690-432f-b3d4-7ed9ef918da9" url="se:baseUrl=https://www.spicejet.com/"/>
+          </connectionUrls>
+        </connection>
+        <connection name="search">
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="021bbc9c-c25e-4231-b453-ba57afefa095" url="se:baseUrl=https://www.spicejet.com/"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
+  </connectionClasses>
+  <browserConfigurations>
+    <browserConfiguration adjustBrowserWidthForChromeIde="true" browserHeight="0" browserWidth="0" name="Full Screen">
+      <summary>Full screen with Test Builder adjustment</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1024" browserWidthType="Pixels" name="1024x768">
+      <summary>Fixed 1024x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="800" browserHeightType="Pixels" browserWidth="1280" browserWidthType="Pixels" name="1280x800">
+      <summary>Fixed 1280x800</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="768" browserHeightType="Pixels" browserWidth="1366" browserWidthType="Pixels" name="1366x768">
+      <summary>Fixed 1366x768</summary>
+    </browserConfiguration>
+    <browserConfiguration browserHeight="1080" browserHeightType="Pixels" browserWidth="1920" browserWidthType="Pixels" name="1920x1080">
+      <summary>Fixed 1920x1080</summary>
+    </browserConfiguration>
+  </browserConfigurations>
+  <browserApplications>
+    <browserApplication connectionTypes="sf" name="Salesforce1">
+      <properties>
+        <browserPlatformProperty name="browserName" platform="IOS" type="DesiredCapability" value="Safari"/>
+        <browserPlatformProperty name="browserName" platform="ANDROID" type="DesiredCapability" value="Chrome"/>
+      </properties>
+    </browserApplication>
+    <browserApplication connectionTypes="sf" name="ServiceMax FSA">
+      <properties>
+        <browserPlatformProperty name="bundleId" platform="IOS" type="DesiredCapability" value="com.servicemaxinc.svmxfieldserviceapp"/>
+        <browserPlatformProperty name="app" platform="DESKTOP" type="DesiredCapability" value="C:\\Program Files\\ServiceMax\\ServiceMax Field Service\\Laptop Mobile.exe"/>
+      </properties>
+    </browserApplication>
+  </browserApplications>
+  <browserProviders>
+    <browserProvider name="Desktop" type="SeleniumLocal">
+      <devices>
+        <browserProviderDevice name="Full Screen">
+          <properties>
+            <browserPlatformProperty name="summary" value="Full screen with Test Builder adjustment"/>
+            <browserPlatformProperty name="browserHeightType" value="Full"/>
+            <browserPlatformProperty name="browserWidthType" value="Full"/>
+            <browserPlatformProperty name="adjustBrowserWidthForChromeIde" value="true"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1024x768">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1024x768"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="768"/>
+            <browserPlatformProperty name="browserWidth" value="1024"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1280x800">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1280x800"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="800"/>
+            <browserPlatformProperty name="browserWidth" value="1280"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1366x768">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1366x768"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="768"/>
+            <browserPlatformProperty name="browserWidth" value="1366"/>
+          </properties>
+        </browserProviderDevice>
+        <browserProviderDevice name="1920x1080">
+          <properties>
+            <browserPlatformProperty name="summary" value="Fixed 1920x1080"/>
+            <browserPlatformProperty name="browserHeightType" value="Pixels"/>
+            <browserPlatformProperty name="browserWidthType" value="Pixels"/>
+            <browserPlatformProperty name="browserHeight" value="1080"/>
+            <browserPlatformProperty name="browserWidth" value="1920"/>
+          </properties>
+        </browserProviderDevice>
+      </devices>
+    </browserProvider>
+  </browserProviders>
+</testProject>

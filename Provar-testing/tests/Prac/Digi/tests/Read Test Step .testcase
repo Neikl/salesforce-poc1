@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase id="1">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" name="ApexConnect" testItemId="1" title="Salesforce Connect: Test2 (Test)">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">Test2</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Test2</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="uiApplicationName">
+          <value class="value" valueClass="string">Digital_Mortgages</value>
+        </argument>
+        <argument id="quickUiLogin">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="closeAllPrimaryTabs">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="reuseConnectionName"/>
+        <argument id="alreadyOpenBehaviour">
+          <value class="value" valueClass="string">Fail</value>
+        </argument>
+        <argument id="privateBrowsingMode"/>
+        <argument id="enableObjectIdLogging">
+          <value class="value" valueClass="boolean">true</value>
+        </argument>
+        <argument id="autoCleanup"/>
+        <argument id="cleanupConnectionName"/>
+        <argument id="logFileLocation"/>
+        <argument id="username"/>
+        <argument id="password"/>
+        <argument id="securityToken"/>
+        <argument id="environment"/>
+        <argument id="lightningMode">
+          <value class="value" valueClass="string">default</value>
+        </argument>
+        <argument id="webBrowser"/>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.io.Read" name="Read" testItemId="2" title="Read: C:\\Users\\SaiIndira\\Provar1\\Workspace6\\Sales\\templates\\LeadTestData.xlsx=&gt;Contents">
+      <arguments>
+        <argument id="urlString">
+          <value class="url">C:\\Users\\SaiIndira\\Provar1\\Workspace6\\Sales\\templates\\LeadTestData.xlsx</value>
+        </argument>
+        <argument id="contentFormat">
+          <value class="value" valueClass="string">Text</value>
+        </argument>
+        <argument id="contentEncoding">
+          <value class="value" valueClass="string">Default</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">Contents</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="storeAs">
+          <value class="value" valueClass="string">Text</value>
+        </argument>
+      </arguments>
+    </apiCall>
+  </steps>
+</testCase>

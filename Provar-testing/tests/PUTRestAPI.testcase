@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase id="73">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.restservice.WebConnect" name="WebConnect" testItemId="1" title="Web Connect: WebServiceConnection">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">PostrestAPI</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">WebServiceConnection</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.restservice.RestRequest" name="RestRequest" testItemId="2" title="Web Request (REST): ⇒RestResponse">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">WebServiceConnection</value>
+        </argument>
+        <argument id="targetValue">
+          <value class="restTarget" uri="rest:untyped?method=PUT&amp;bodyStyle=JSON"/>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">RestResponse</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="statusResultName">
+          <value class="value" valueClass="string">RestResponseStatus</value>
+        </argument>
+        <argument id="restResourceUrl">
+          <value class="value" valueClass="string">/PUT/public-api/users/123</value>
+        </argument>
+        <argument id="restRequestHeader"/>
+        <argument id="restBody">
+          <value class="value" valueClass="string">\n {\n    data":[\n      {\n         "id":4,\n         "user_id":3,\n         "title":"Antiquus timidus et quaerat pauci velut vitae ut.",\n         "completed":false,\n         "created_at":"2020-10-05T03:50:04.047+05:30",\n         "updated_at":"2020-10-05T03:50:04.047+05:30\n      },\n      {\n         "id":5,\n         "user_id":3,\n         "title":"Perspiciatis labore adaugeo infit vir correptius abscido quia vel dolor officiis.",\n         "completed":false,\n         "created_at":"2020-10-05T03:50:04.049+05:30",\n         "updated_at":"2020-10-05T03:50:04.049+05:30"\n      },\n      {\n         "id":6,\n         "user_id":4,\n         "title":"Quo vicissitudo tego totidem ducimus aut cupressus et cado spoliatio.",\n         "completed":false,\n         "created_at":"2020-10-05T03:50:04.092+05:30",\n         "updated_at":"2020-10-05T03:50:04.092+05:30"\n      },\n      {\n         "id":7,\n         "user_id":5,\n         "title":"Vinculum caecus auxilium tonsor deleo via comptus nihil.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.125+05:30",\n         "updated_at":"2020-10-05T03:50:04.125+05:30"\n      },\n      {\n         "id":8,\n         "user_id":6,\n         "title":"Comptus voluptas asper adduco ventito sed tergum caritas.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.132+05:30",\n         "updated_at":"2020-10-05T03:50:04.132+05:30"\n      },\n      {\n         "id":9,\n         "user_id":7,\n         "title":"Succedo curia cubo coerceo aut sponte verto celer auctus tabella calco.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.146+05:30",\n         "updated_at":"2020-10-05T03:50:04.146+05:30"\n      },\n      {\n         "id":10,\n         "user_id":8,\n         "title":"Amplexus verus bestia admoveo adiuvo ter aperte.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.161+05:30",\n         "updated_at":"2020-10-05T03:50:04.161+05:30"\n      },\n      {\n         "id":11,\n         "user_id":9,\n         "title":"Tametsi eaque corporis tubineus acies adipisci corrigo et amet cruciamentum atavus.",\n         "completed":false,\n         "created_at":"2020-10-05T03:50:04.184+05:30",\n         "updated_at":"2020-10-05T03:50:04.184+05:30"\n      },\n      {\n         "id":12,\n         "user_id":10,\n         "title":"Deduco contabesco aurum dolor auris verbum.",\n         "completed":false,\n         "created_at":"2020-10-05T03:50:04.204+05:30",\n         "updated_at":"2020-10-05T03:50:04.204+05:30"\n      },\n      {\n         "id":13,\n         "user_id":10,\n         "title":"Aequitas conitor carus avoco desidero alii vacuus eum.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.206+05:30",\n         "updated_at":"2020-10-05T03:50:04.206+05:30"\n      },\n      {\n         "id":14,\n         "user_id":11,\n         "title":"Qui aliquid cogo despecto centum certo acsi vir pecus curto.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.242+05:30",\n         "updated_at":"2020-10-05T03:50:04.242+05:30"\n      },\n      {\n         "id":15,\n         "user_id":11,\n         "title":"Excepturi quia sapiente uter carbo combibo aurum et modi.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.245+05:30",\n         "updated_at":"2020-10-05T03:50:04.245+05:30"\n      },\n      {\n         "id":16,\n         "user_id":12,\n         "title":"Aqua vorago concido pecco deputo titulus averto trado.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.250+05:30",\n         "updated_at":"2020-10-05T03:50:04.250+05:30"\n      },\n      {\n         "id":17,\n         "user_id":12,\n         "title":"Vito deinde apparatus circumvenio summopere.",\n         "completed":false,\n         "created_at":"2020-10-05T03:50:04.252+05:30",\n         "updated_at":"2020-10-05T03:50:04.252+05:30"\n      },\n      {\n         "id":18,\n         "user_id":13,\n         "title":"Desipio dolor tempora temperantia conitor delicate vociferor conforto arbustum deinde voluptatibus.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.277+05:30",\n         "updated_at":"2020-10-05T03:50:04.277+05:30"\n      },\n      {\n         "id":19,\n         "user_id":13,\n         "title":"Animus concedo quod et congregatio tres aureus.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.279+05:30",\n         "updated_at":"2020-10-05T03:50:04.279+05:30"\n      },\n      {\n         "id":20,\n         "user_id":13,\n         "title":"Tubineus alii depraedor canis curso comprehendo audio comedo appello.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.281+05:30",\n         "updated_at":"2020-10-05T03:50:04.281+05:30"\n      },\n      {\n         "id":21,\n         "user_id":14,\n         "title":"Tactus abutor considero hic consequatur ut textus aureus vociferor.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.299+05:30",\n         "updated_at":"2020-10-05T03:50:04.299+05:30"\n      },\n      {\n         "id":22,\n         "user_id":14,\n         "title":"Vomer id iure correptius distinctio adduco acervus aqua doloribus voluptas.",\n         "completed":true,\n         "created_at":"2020-10-05T03:50:04.301+05:30",\n         "updated_at":"2020-10-05T03:50:04.301+05:30"\n      },\n      {\n         "id":23,\n         "user_id":15,\n         "title":"Degero occaecati excepturi denego civitas coaegresco.",\n         "completed":false,\n         "created_at":"2020-10-05T03:50:04.306+05:30",\n         "updated_at":"2020-10-05T03:50:04.306+05:30"\n      }\n   ]\n}\n</value>
+        </argument>
+        <argument id="restAttachments">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="contentType">
+          <value class="value" valueClass="string">JSON</value>
+        </argument>
+      </arguments>
+      <generatedParameters>
+        <apiParam group="request" internal="true" name="restResourceUrl" title="Resource URL">
+          <type>
+            <textType/>
+          </type>
+        </apiParam>
+        <apiParam group="header" internal="true" name="restRequestHeader" title="Request Header">
+          <type>
+            <textType/>
+          </type>
+        </apiParam>
+        <apiParam group="body" name="restBody" title="Body">
+          <type>
+            <textType>
+              <constraints>
+                <valueConstraint name="mimeType">application/json</valueConstraint>
+              </constraints>
+            </textType>
+          </type>
+        </apiParam>
+        <compoundApiParam group="attachments" list="true" name="restAttachments" title="Attachment">
+          <childParams>
+            <apiParam name="name" title="Attachment Name"/>
+            <apiParam name="fileName" title="File Name"/>
+            <apiParam name="contentType" title="Content Type">
+              <type>
+                <choiceType>
+                  <constraints>
+                    <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                    <valueConstraint name="valuesSourceDependencies">com.provar.core.model.base.api.MimeContentType</valueConstraint>
+                  </constraints>
+                </choiceType>
+              </type>
+            </apiParam>
+            <apiParam name="data" title="Data">
+              <type>
+                <urlType/>
+              </type>
+            </apiParam>
+            <apiParam name="base64Encode" title="Encode As Base64">
+              <type>
+                <booleanType/>
+              </type>
+            </apiParam>
+          </childParams>
+        </compoundApiParam>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+</testCase>

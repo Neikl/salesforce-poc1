@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testCase id="60">
+  <summary/>
+  <steps>
+    <apiCall apiId="com.provar.plugins.bundled.apis.restservice.WebConnect" name="WebConnect" testItemId="1" title="Web Connect: WebServiceConnection">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">PostrestAPI</value>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">WebServiceConnection</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+      </arguments>
+    </apiCall>
+    <apiCall apiId="com.provar.plugins.bundled.apis.restservice.RestRequest" name="RestRequest" testItemId="2" title="Web Request (REST): ⇒RestResponse">
+      <arguments>
+        <argument id="connectionName">
+          <value class="value" valueClass="string">WebServiceConnection</value>
+        </argument>
+        <argument id="targetValue">
+          <value class="restTarget" uri="rest:untyped?method=POST&amp;bodyStyle=Other"/>
+        </argument>
+        <argument id="resultName">
+          <value class="value" valueClass="string">RestResponse</value>
+        </argument>
+        <argument id="resultScope">
+          <value class="value" valueClass="string">Test</value>
+        </argument>
+        <argument id="statusResultName">
+          <value class="value" valueClass="string">RestResponseStatus</value>
+        </argument>
+        <argument id="restResourceUrl">
+          <value class="value" valueClass="string">/public-api/users</value>
+        </argument>
+        <argument id="restRequestHeader"/>
+        <argument id="restBody">
+          <value class="value" valueClass="string">{\n\t"data": [{\n\t\t\t"id": 3,\n\t\t\t"name": "Chanda Marar DDS",\n\t\t\t"email": "marar_dds_chanda@daniel-quitzon.io",\n\t\t\t"gender": "Male",\n\t\t\t"status": "Inactive",\n\t\t\t"created_at": "2020-10-01T03:50:03.870+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:03.870+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 4,\n\t\t\t"name": "Girja Shah DDS",\n\t\t\t"email": "shah_girja_dds@konopelski.info",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:03.876+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:03.876+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 5,\n\t\t\t"name": "Subhash Mehra",\n\t\t\t"email": "mehra_subhash@schultz.biz",\n\t\t\t"gender": "Male",\n\t\t\t"status": "Inactive",\n\t\t\t"created_at": "2020-10-01T03:50:03.896+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:03.896+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 6,\n\t\t\t"name": "Nagabhushanam Tandon",\n\t\t\t"email": "nagabhushanam_tandon@adams-fahey.info",\n\t\t\t"gender": "Male",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:03.917+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:03.917+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 7,\n\t\t\t"name": "Geetanjali Ahluwalia",\n\t\t\t"email": "ahluwalia_geetanjali@mills.io",\n\t\t\t"gender": "Male",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:03.932+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:03.932+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 8,\n\t\t\t"name": "Chakor Chattopadhyay",\n\t\t\t"email": "chakor_chattopadhyay@marquardt.biz",\n\t\t\t"gender": "Male",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:03.938+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:03.938+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 9,\n\t\t\t"name": "Shreya Panicker Jr.",\n\t\t\t"email": "jr_panicker_shreya@feest.com",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:03.953+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:03.953+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 10,\n\t\t\t"name": "Giri Malik",\n\t\t\t"email": "malik_giri@kerluke.biz",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:03.973+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:03.973+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 11,\n\t\t\t"name": "Kama Asan JD",\n\t\t\t"email": "kama_asan_jd@lueilwitz-mraz.org",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Inactive",\n\t\t\t"created_at": "2020-10-01T03:50:03.988+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:03.988+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 12,\n\t\t\t"name": "Kashyap Kakkar",\n\t\t\t"email": "kakkar_kashyap@roberts.name",\n\t\t\t"gender": "Male",\n\t\t\t"status": "Inactive",\n\t\t\t"created_at": "2020-10-01T03:50:04.006+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:04.006+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 13,\n\t\t\t"name": "Divya Bandopadhyay",\n\t\t\t"email": "divya_bandopadhyay@wunsch.name",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:04.024+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:04.024+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 14,\n\t\t\t"name": "Mrs. Deven Tandon",\n\t\t\t"email": "deven_mrs_tandon@cole-walker.com",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Inactive",\n\t\t\t"created_at": "2020-10-01T03:50:04.041+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:04.041+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 15,\n\t\t\t"name": "Amodini Bhattathiri",\n\t\t\t"email": "bhattathiri_amodini@huels-bosco.org",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:04.055+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:04.055+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 16,\n\t\t\t"name": "Ahalya Gupta",\n\t\t\t"email": "ahalya_gupta@bednar-rohan.io",\n\t\t\t"gender": "Male",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:04.074+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:04.074+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 17,\n\t\t\t"name": "Amb. Chetan Nambeesan",\n\t\t\t"email": "chetan_amb_nambeesan@bode.info",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Inactive",\n\t\t\t"created_at": "2020-10-01T03:50:04.088+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:04.088+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 18,\n\t\t\t"name": "Deeptendu Johar",\n\t\t\t"email": "deeptendu_johar@heidenreich.org",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:04.127+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:04.127+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 19,\n\t\t\t"name": "Rita Varma",\n\t\t\t"email": "varma_rita@paucek.biz",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:04.138+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:04.138+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 20,\n\t\t\t"name": "Allasani Peddana",\n\t\t\t"email": "allasani.peddana@15ce.com",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:04.141+05:30",\n\t\t\t"updated_at": "2020-10-01T08:44:37.522+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 21,\n\t\t\t"name": "Fr. Oormila Gowda",\n\t\t\t"email": "fr_gowda_oormila@jenkins.info",\n\t\t\t"gender": "Male",\n\t\t\t"status": "Inactive",\n\t\t\t"created_at": "2020-10-01T03:50:04.173+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:04.173+05:30"\n\t\t},\n\t\t{\n\t\t\t"id": 23,\n\t\t\t"name": "Devesh Mehra",\n\t\t\t"email": "mehra_devesh@jones-runte.co",\n\t\t\t"gender": "Female",\n\t\t\t"status": "Active",\n\t\t\t"created_at": "2020-10-01T03:50:04.199+05:30",\n\t\t\t"updated_at": "2020-10-01T03:50:04.199+05:30"\n\t\t}\n\t]\n}</value>
+        </argument>
+        <argument id="restAttachments">
+          <value class="valueList" mutable="Mutable"/>
+        </argument>
+        <argument id="contentType">
+          <value class="value" valueClass="string">JSON</value>
+        </argument>
+      </arguments>
+      <generatedParameters>
+        <apiParam group="request" internal="true" name="restResourceUrl" title="Resource URL">
+          <type>
+            <textType/>
+          </type>
+        </apiParam>
+        <apiParam group="header" internal="true" name="restRequestHeader" title="Request Header">
+          <type>
+            <textType/>
+          </type>
+        </apiParam>
+        <apiParam group="body" name="restBody" title="Body">
+          <type>
+            <textType/>
+          </type>
+        </apiParam>
+        <compoundApiParam group="attachments" list="true" name="restAttachments" title="Attachment">
+          <childParams>
+            <apiParam name="name" title="Attachment Name"/>
+            <apiParam name="fileName" title="File Name"/>
+            <apiParam name="contentType" title="Content Type">
+              <type>
+                <choiceType>
+                  <constraints>
+                    <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                    <valueConstraint name="valuesSourceDependencies">com.provar.core.model.base.api.MimeContentType</valueConstraint>
+                  </constraints>
+                </choiceType>
+              </type>
+            </apiParam>
+            <apiParam name="data" title="Data">
+              <type>
+                <urlType/>
+              </type>
+            </apiParam>
+            <apiParam name="base64Encode" title="Encode As Base64">
+              <type>
+                <booleanType/>
+              </type>
+            </apiParam>
+          </childParams>
+        </compoundApiParam>
+        <apiParam group="body" name="contentType" title="Content Type">
+          <type>
+            <choiceType>
+              <constraints>
+                <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                <valueConstraint name="valuesSourceDependencies">com.provar.core.model.base.api.MimeContentType</valueConstraint>
+              </constraints>
+            </choiceType>
+          </type>
+        </apiParam>
+      </generatedParameters>
+    </apiCall>
+  </steps>
+</testCase>

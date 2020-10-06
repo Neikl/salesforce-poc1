@@ -1,0 +1,13 @@
+---
+# tasks file for pushtos3
+- name: "basic upload"
+  community.aws.s3_sync:
+    bucket: salesforce.sonata-software.results
+    file_root: /var/lib/jenkins/workspace/salesforce-demo/Provar-testing/ANT/Results
+- name: "all the options"
+  community.aws.s3_sync: 
+    bucket: salesforce.sonata-software.results
+    file_change_strategy: force
+    file_root: /var/lib/jenkins/workspace/salesforce-demo/Provar-testing/ANT/Results
+    include: "*.*"
+    permission: public-read

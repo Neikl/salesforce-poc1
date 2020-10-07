@@ -45,7 +45,7 @@ stages{
 
  }
 
- stage('Results to Artifact Repo'){
+ stage('Artifacts to S3'){
 
  steps{
 

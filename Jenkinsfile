@@ -4,7 +4,7 @@ pipeline{
 
 stages{
 	
- stage('Check out source'){
+ stage('Check out ANT scripts'){
 
  steps{
 
@@ -24,7 +24,7 @@ stages{
 
  }
 	
- stage('Depoying to dev'){
+ stage('Depoying to devorg'){
 
  steps{
 

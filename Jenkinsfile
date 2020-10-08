@@ -34,7 +34,7 @@ stages{
 
  }	
  
- stage('Running Provar test cases'){
+ stage('Running Provar Test Cases'){
 
  steps{
 
@@ -45,7 +45,7 @@ stages{
 
  }
 
- stage('Artifacts to S3'){
+ stage('Test Reports to S3'){
 
  steps{
 

@@ -49,7 +49,7 @@ stages{
 
  steps{
 
- sh "ansible-playbook /var/lib/jenkins/workspace/provar-testing/pushtos3.yml -vvv"
+ sh "ansible-playbook /var/lib/jenkins/workspace/salesforce-demo/Provar-testing/pushtos3.yml -vvv"
 
  }
 

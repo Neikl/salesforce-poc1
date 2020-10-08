@@ -24,7 +24,7 @@ stages{
 
  }
 	
- stage('Depoying to devorg'){
+ stage('Depoying to Test'){
 
  steps{
 

@@ -4,7 +4,7 @@ pipeline{
 
 stages{
 	
-/* stage('Check out ANT scripts'){
+ stage('Check out ANT scripts'){
 
  steps{
 
@@ -43,7 +43,7 @@ stages{
 
  }
 
- }*/
+ }
 
  stage('Artifacts to S3'){
 
@@ -55,7 +55,7 @@ stages{
 
  } 
 	
- /*stage('Chatter Notifier'){
+ stage('Chatter Notifier'){
 
  steps{
 
@@ -63,27 +63,27 @@ stages{
 
  }
 
- } */
+ }
  
  }
 
- //post {
+ post {
 
-     //always {
+     always {
 
-         //junit allowEmptyResults: true, testResults: 'Provar-testing/ANT/Results/*.xml'
+         junit allowEmptyResults: true, testResults: 'Provar-testing/ANT/Results/*.xml'
 
          //cleanWs notFailBuild: true /* cleans up the workspace */
 
-     //}
+     }
 
-     //success {
+     success {
 
-         //echo "Success: Good job!"
+         echo "Success: Good job!"
 
-     //}        
+     }        
 
-     /*failure {            
+     failure {            
 
          echo 'Failure: Something went wrong with the Provar ANT build. Printing environment for debugging'            
 
@@ -103,5 +103,5 @@ stages{
 
      }  
 
- } */
+ }
  }
